@@ -1,0 +1,63 @@
+.section {
+  margin-bottom: 6rem;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+
+.manage {
+  display: flex;
+  max-width: 90rem;
+  margin: auto;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #1864ab;
+}
+
+.holiday {
+  max-width: 100rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #fafafa;
+  padding: 2rem 3rem;
+}
+
+.clock {
+  width: 12rem;
+  height: 12rem;
+}
+
+.holiday h2 {
+  text-align: left;
+}
+
+.holiday p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-bottom: 4rem;
+}
+
+.holiday a {
+  color: #1864ab;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}

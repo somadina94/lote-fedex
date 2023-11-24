@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  max-width: 100rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navButton {
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  display: inline-block;
+  height: 8rem;
+  width: auto;
+  padding: 0 2rem;
+  background-color: #4d148c;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mouseOver {
+  background-color: #fff;
+  color: #4d148c;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: 8rem;
+  z-index: 10;
+}

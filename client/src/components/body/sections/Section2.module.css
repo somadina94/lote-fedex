@@ -1,0 +1,9 @@
+.section {
+  padding: 2rem;
+}
+
+.section img {
+  margin: auto;
+  display: block;
+  width: 100rem;
+}

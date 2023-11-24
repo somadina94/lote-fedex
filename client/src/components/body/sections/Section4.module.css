@@ -1,0 +1,59 @@
+.section {
+  max-width: 100rem;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 4rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.photo {
+  flex: 1;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.info {
+  margin-left: 3rem;
+  flex: 1;
+}
+
+.info h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.info p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.info p a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+}
+
+.info button {
+  padding: 2rem 3rem;
+  border-radius: 50px;
+  border: 2px solid #1864ab;
+  color: #1864ab;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}

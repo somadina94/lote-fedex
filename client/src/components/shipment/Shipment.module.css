@@ -1,0 +1,41 @@
+.shipment {
+  max-width: 40rem;
+  margin: auto;
+}
+
+.main {
+  margin-top: 8rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid #4d148c;
+  padding: 4rem;
+  border-radius: 4px;
+}
+
+.main p {
+  font-size: 1.4rem;
+}
+
+.main h3 {
+  font-size: 1.6rem;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress p {
+  height: 4rem;
+  border-right: 4px solid grey;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.tracking {
+  list-style: none;
+}

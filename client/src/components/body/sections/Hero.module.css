@@ -1,0 +1,118 @@
+.hero {
+  background-image: url('../../../images/fedex.webp');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.container {
+  max-width: 66rem;
+  margin: auto;
+  padding: 6rem 1rem;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.nav {
+  max-width: 50rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.nav a {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.nav a img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.rate,
+.location {
+  background-color: #fff;
+  color: black;
+}
+
+.trackIcon {
+  background-color: #4d148c;
+  color: #fff;
+  height: 14rem;
+}
+
+.track {
+  display: flex;
+  justify-content: center;
+  max-width: 60rem;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.track input {
+  width: 100%;
+  height: 7rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  outline: none;
+  margin-right: 0.4rem;
+}
+
+.track button {
+  width: 16rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #ff6200;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 44rem;
+  align-items: center;
+}
+
+.links a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links h2 {
+  color: #fff;
+}
+
+.error {
+  background-color: red;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  color: #fff;
+  margin: auto;
+  max-width: 60rem;
+  text-align: center;
+  position: absolute;
+  top: o;
+  left: 0;
+  right: 0;
+}
