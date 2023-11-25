@@ -1,0 +1,13 @@
+.nav {
+  max-width: 50rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}

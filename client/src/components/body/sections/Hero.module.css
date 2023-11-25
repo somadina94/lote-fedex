@@ -116,3 +116,34 @@
   left: 0;
   right: 0;
 }
+
+@media (max-width: 42em) {
+  .hero {
+    background-image: url('../../../images/hero-mobile.png');
+  }
+}
+
+@media (max-width: 42em) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav a {
+    font-size: 1.4rem;
+  }
+
+  .nav a img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .links a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 23.75em) {
+  .nav a {
+    font-size: 1rem;
+  }
+}

@@ -25,13 +25,14 @@ const Shipment = () => {
     <div className={classes.shipment}>
       <div className={classes.main}>
         <p>SHIPMENT CREATED</p>
-        <p>Id: {shipment._id}</p>
-        <h3>Name: {shipment.name}</h3>
-        <p>Receipient: Williams Somadina</p>
+        <p>FedEx facility: {shipment.facility}</p>
+        <h3>Tracking Id: {shipment.trackingId}</h3>
+        <p>Sender: {shipment.sender}</p>
+        <h3>Shipment name: {shipment.name}</h3>
+        <p>Receipient: {shipment.receipient}</p>
         <p>Destination: {shipment.destination}</p>
         <p>Date created: {createdAt}</p>
         <p>Estimated delivery date: {deliveryDate}</p>
-        <h3>Tracking Id: {shipment.trackingId}</h3>
       </div>
       <div className={classes.progress}>
         <p></p>

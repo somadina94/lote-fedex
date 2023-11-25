@@ -57,3 +57,47 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+@media (max-width: 58.2em) {
+  .info h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+
+  .info p a {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .info button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 38.25em) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .photo {
+    max-width: 30rem;
+  }
+
+  .info {
+    max-width: 30rem;
+    margin-left: 0rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+}

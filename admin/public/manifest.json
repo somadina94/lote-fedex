@@ -1,6 +1,6 @@
 {
-  "short_name": "FedEx",
-  "name": "Track &amp; Ship Online or Find Nearby Locations | FedEx",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

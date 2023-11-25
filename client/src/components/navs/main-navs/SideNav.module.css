@@ -21,3 +21,29 @@
   color: #fff;
   cursor: pointer;
 }
+
+@media (max-width: 66.25em) {
+  .nav a {
+    font-size: 1rem;
+  }
+
+  .icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+@media (max-width: 55.125em) {
+  .nav {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+}
+
+@media (max-width: 34.9em) {
+  .nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

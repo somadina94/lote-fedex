@@ -1,14 +1,18 @@
 const Shipment = require("../models/shipmentModel");
 
 exports.createShipment = async (req, res) => {
+  console.log(req.body.createdAt);
   try {
     const shipment = await Shipment.create({
       name: req.body.name,
       trackingId: req.body.trackingId,
       destination: req.body.destination,
-      createdAt: new Date(req.body.date),
+      createdAt: new Date(req.body.createdAt),
       deliveryDate: new Date(req.body.deliveryDate),
       receipient: req.body.receipient,
+      facility: req.body.facility,
+      sender: req.body.sender,
+      senderAddress: req.body.senderAddress,
     });
 
     if (!shipment) {
@@ -19,7 +23,7 @@ exports.createShipment = async (req, res) => {
     }
 
     res.status(201).json({
-      status: "sucess",
+      status: "success",
       message: `Shipment created successfully`,
       data: {
         shipment,
@@ -29,6 +33,7 @@ exports.createShipment = async (req, res) => {
     res.status(500).json({
       status: "fail",
       error: err,
+      message: `Error creating shipment, make sure the Id has not been used and the whole form is filled correctly`,
     });
   }
 };

@@ -18,6 +18,9 @@ const shipmentSchema = new mongoose.Schema({
   },
   destination: String,
   deliveryDate: Date,
+  sender: String,
+  senderAddress: String,
+  facility: String,
 });
 
 const Shipment = mongoose.model("Shipment", shipmentSchema);

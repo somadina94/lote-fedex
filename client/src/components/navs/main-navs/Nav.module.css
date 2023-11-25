@@ -30,3 +30,32 @@
   top: 8rem;
   z-index: 10;
 }
+
+@media (max-width: 66.25em) {
+  .navButton {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 55.125em) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-start;
+  }
+
+  .navButton {
+    padding: 0 1rem;
+    height: 3rem;
+  }
+
+  .dropdown {
+    top: 3rem;
+  }
+}
+
+@media (max-width: 34.9em) {
+  .nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

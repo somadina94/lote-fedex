@@ -7,3 +7,15 @@
   display: block;
   width: 100rem;
 }
+
+@media (max-width: 75em) {
+  .section img {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .section img {
+    width: 30rem;
+  }
+}

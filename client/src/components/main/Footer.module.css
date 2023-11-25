@@ -71,3 +71,56 @@
 .foot-nav a:last-child {
   border: none;
 }
+
+@media (max-width: 75em) {
+  .foot {
+    padding: 2rem 10rem;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .foot {
+    padding: 2rem;
+  }
+
+  .links1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .foot-nav a {
+    border-right: 2px solid #fff;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+
+  .foot-nav {
+    max-width: 28rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .navs {
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .content h4 {
+    text-align: center;
+  }
+
+  .social {
+    max-width: 30rem;
+  }
+
+  .social img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 27.5em) {
+  .foot-nav {
+    flex-direction: column;
+    max-width: 20rem;
+  }
+}
