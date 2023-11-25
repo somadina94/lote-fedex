@@ -1,0 +1,36 @@
+.location {
+  max-width: 30rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  position: relative;
+}
+
+.location h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.location p {
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}
+
+.location button {
+  background-color: red;
+  border: none;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0, 2);
+  color: #fff;
+}

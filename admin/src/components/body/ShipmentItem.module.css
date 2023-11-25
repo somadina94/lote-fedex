@@ -1,0 +1,48 @@
+.shipment {
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info span {
+  font-size: 0.8rem;
+  max-width: 10rem;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action button {
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.update {
+  background-color: #862e9c;
+}
+
+.delete {
+  background-color: red;
+}
+
+.tracking {
+  background-color: blue;
+}
+
+.add {
+  background-color: green;
+}

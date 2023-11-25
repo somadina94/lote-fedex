@@ -40,8 +40,41 @@ exports.createShipment = async (req, res) => {
 
 exports.updateShipment = async (req, res) => {
   try {
+    const shipment = await Shipment.findOne({ trackingId: req.params.id });
+
+    if (!shipment) {
+      return res.status(404).json({
+        status: "fail",
+        message: `Shipment not found`,
+      });
+    }
+
+    const updatedShipment = await Shipment.findByIdAndUpdate(
+      { _id: shipment._id },
+      req.body,
+      { new: true }
+    );
+
+    res.status(200).json({
+      status: "success",
+      message: `Shipment with id ${updatedShipment.trackingId} has been updated successfully!`,
+      data: {
+        shipment: updatedShipment,
+      },
+    });
+  } catch (err) {
+    res.status(500).json({
+      status: "fail",
+      error: err,
+      message: `Could not update Shipment`,
+    });
+  }
+};
+
+exports.updateShipmentLoc = async (req, res) => {
+  try {
     const shipment = await Shipment.findOne({
-      trackingId: req.body.trackingId,
+      trackingId: req.params.id,
     });
     if (!shipment) {
       return res.status(404).json({
@@ -51,7 +84,7 @@ exports.updateShipment = async (req, res) => {
     }
 
     const data = {
-      address: req.body.location,
+      address: req.body.address,
       date: new Date(req.body.date),
       title: req.body.title,
       quote: req.body.quote,
@@ -77,7 +110,7 @@ exports.updateShipment = async (req, res) => {
 
 exports.deleteShipment = async (req, res) => {
   try {
-    const shipment = await Shipment.findOne({ _id: req.body.id });
+    const shipment = await Shipment.findOne({ _id: req.params.id });
 
     if (!shipment) {
       return res.status(404).json({
@@ -127,7 +160,7 @@ exports.getOneShipment = async (req, res) => {
 
 exports.getAllShipments = async (req, res) => {
   const shipments = await Shipment.find();
-  if ((shipments.length = 0)) {
+  if (shipments.length === 0) {
     return res.status(404).json({
       status: "fail",
       message: `You currently have no shipments.`,
@@ -165,6 +198,32 @@ exports.deliverShipment = async (req, res) => {
     res.status(500).json({
       status: "fail",
       error: err,
+    });
+  }
+};
+
+exports.deleteLocation = async (req, res) => {
+  try {
+    const updatedShipment = await Shipment.updateOne(
+      { trackingId: req.body.trackingId },
+      { $pull: { locations: { _id: req.body.locId } } }
+    );
+
+    if (updatedShipment.nModified === 0) {
+      return res.status(404).json({
+        status: "fail",
+        message: `Shipment location not found!`,
+      });
+    }
+
+    res.status(200).json({
+      status: "success",
+      message: `Location deleted successfully`,
+    });
+  } catch (err) {
+    res.status(500).json({
+      status: "fail",
+      message: `Could not delete Location`,
     });
   }
 };
